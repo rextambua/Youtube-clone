@@ -8,7 +8,7 @@ import {
   demoChannelTitle,
 } from "../utils/constants";
 
-function ChannelCard({ channelDetail }) {
+function ChannelCard({ channelDetail, marginTop }) {
   return (
     <Box
       sx={{
@@ -20,6 +20,7 @@ function ChannelCard({ channelDetail }) {
         width: { xs: "356px", md: "300px" },
         height: "326px",
         margin: "auto",
+        marginTop,
       }}
     >
       <Link to={`/channel/${channelDetail?.id?.channelId}`}>

@@ -41,4 +41,4 @@ export const demoChannelTitle = "JavaScript Mastery";
 export const demoVideoTitle =
   "Build and Deploy 5 JavaScript & React API Projects in 10 Hours - Full Course | RapidAPI";
 export const demoProfilePicture =
-  "https://gist.github.com/adrianhajdin/9725da94fa1f08c9668d856d3c94dd47";
+  "https://pbs.twimg.com/profile_images/1534280478991302656/8j4QlZum_400x400.jpg";
