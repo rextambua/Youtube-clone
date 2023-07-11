@@ -1,21 +1,21 @@
-import React from 'react';
-import {Stack, Box} from '@mui/material';
-import {VideoCard, ChannelCard} from "./";
+import React from "react";
+import { Stack, Box } from "@mui/material";
+import { VideoCard, ChannelCard } from "./";
 
-
-function Videos({videos}) {
-    console.log(videos)
-
-    return (
-        <Stack direction='row' flexWrap='wrap' justifyContent="start" gap={2}>
-            { videos.map((item, idx) => (
-                <Box key={idx}>
-                    {item.id.videoId && <VideoCard video={item}/>}
-                    {item.snippet.channelId && <ChannelCard channelDetail={item} />}
-                </Box>
-            )) }
-        </Stack>
-    );
+function Videos({ videos }) {
+  console.log(videos);
+  return (
+    <Stack direction="row" flexWrap="wrap" justifyContent="start" gap={2}>
+      {videos.map((item, idx) => (
+        <Box key={idx}>
+          {item.id.videoId && <VideoCard video={item} />}
+          {(item.id.channelId || item.id.playlistId) && (
+            <ChannelCard channelDetail={item} />
+          )}
+        </Box>
+      ))}
+    </Stack>
+  );
 }
 
 export default Videos;
