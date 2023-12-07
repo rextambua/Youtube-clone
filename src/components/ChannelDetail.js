@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { Box } from "@mui/material";
 import { Videos, ChannelCard } from "./";
 import { fetchFromAPI } from "../utils/fetchFromAPI";
-import zIndex from "@mui/material/styles/zIndex";
 
 function ChannelDetail(props) {
   const [channeldetail, setChannelDetail] = useState(null);
@@ -32,7 +31,7 @@ function ChannelDetail(props) {
             height: "300px",
           }}
         />
-        <ChannelCard channeldetail={channeldetail} marginTop="-93px" />
+        <ChannelCard channelDetail={channeldetail} marginTop="-110px" />
       </Box>
       <Box display="flex" p="2">
         <Box sx={{ mr: { sm: "100px" } }} />

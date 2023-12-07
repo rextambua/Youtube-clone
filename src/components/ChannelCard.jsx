@@ -17,7 +17,7 @@ function ChannelCard({ channelDetail, marginTop }) {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        width: { xs: "356px", md: "300px" },
+        width: { xs: "356px", md: "320px" },
         height: "326px",
         margin: "auto",
         marginTop,
@@ -55,7 +55,7 @@ function ChannelCard({ channelDetail, marginTop }) {
             <Typography>
               {parseInt(
                 channelDetail?.statistics?.subscriberCount
-              ).toLocaleString()}{" "}
+              ).toLocaleString()}
               Subscribers
             </Typography>
           )}

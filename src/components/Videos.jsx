@@ -3,6 +3,7 @@ import { Stack, Box } from "@mui/material";
 import { VideoCard, ChannelCard } from "./";
 
 function Videos({ videos, direction }) {
+  if (!videos?.length) return "Loading...";
   return (
     <Stack
       direction={direction || "row"}
